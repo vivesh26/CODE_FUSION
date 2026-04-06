@@ -6,7 +6,6 @@
 int yylex();
 void yyerror(const char *s);
 
-/* SYMBOL TABLE */
 typedef struct {
     char name[50];
     int value;
@@ -75,7 +74,6 @@ end:
     | '\n'
 ;
 
-/* FIXED GRAMMAR (NO CONFLICTS) */
 
 expr:
     expr '+' term { $$ = $1 + $3; }
