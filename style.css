@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #827495, #37ad94);
+}
+
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 76px;
+}
+
+.top-controls {
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    background: linear-gradient(45deg, #1973b4, black);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+
+
+.split-container {
+    display: flex;
+    height: calc(100vh - 140px);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* PANELS */
+.panel {
+    flex: 1;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.panel h3 {
+    font-size:30px;
+    margin-top: 0;
+    color: white;
+}
+
+
+#editor {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.output-panel {
+    background: #0f172a;
+    color: #f4f4f4;
+}
+
+pre {
+    flex: 1;
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
