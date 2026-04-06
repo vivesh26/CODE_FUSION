@@ -9,7 +9,6 @@ require.config({
 
 require(["vs/editor/editor.main"], function () {
 
-    // Custom theme
     monaco.editor.defineTheme("fusionTheme", {
         base: "vs",
         inherit: true,
@@ -36,7 +35,7 @@ print(b)`,
 });
 
 
-// RUN CODE FUNCTION
+
 async function runCode() {
     const code = editor.getValue();
 
